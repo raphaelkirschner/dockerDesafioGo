@@ -2,7 +2,7 @@ FROM golang AS builder
 
 WORKDIR /app
 
-COPY ./src/fullstack.go .
+COPY ./app/fullstack.go .
 
 RUN go mod init github.com/raphaelkirschner/dockerDesafioGo && \
     go build -o fullstackrocks
